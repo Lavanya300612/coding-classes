@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+    <h2>js class</h2>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <script>
+        class student{
+            constructor(name,year)
+            {
+                this.name=name;
+                this.year=year;
+            }
+        }
+        student1=new student("sita",2005)
+        document.getElementById("student1").innerHTML="my name is "+student1.name+"my DOB is "+student1.year;
+     student2=new student(" ram",2006)
+document.getElementById("student2").innerHTML="my name is "+student2.name+"my DOB is "+student2.year;
+</script>
+</body>
