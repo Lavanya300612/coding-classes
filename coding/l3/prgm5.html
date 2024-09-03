@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<body>
+    <h2>WELCOME TO BRAND NEW AIRPLANES BOOKED PASSENGER'S NAME</h2>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <p id="student3"></p>
+    <p id="student4"></p>
+    <p id="student5"></p>
+    <p id="student6"></p>
+    <p id="student7"></p>
+    <p id="student8"></p>
+    <script>
+        class student{
+            constructor(name,age)
+            {
+                this.name=name;
+                this.age=age;
+            }
+        }
+        student1=new student("sita",25)
+        document.getElementById("student1").innerHTML="my name is "+student1.name+"  and my age is "+student1.age;
+        student2=new student(" ram",26)
+        document.getElementById("student2").innerHTML="my name is "+student2.name+"  and my age is "+student2.age;
+        student3=new student(" ramesh",27)
+        document.getElementById("student3").innerHTML="my name is "+student3.name+"  and my age is "+student3.age;
+        student4=new student(" kaavya",32)
+        document.getElementById("student4").innerHTML="my name is "+student4.name+"  and my age is "+student4.age;
+        student5=new student(" mukesh",18)
+        document.getElementById("student5").innerHTML="my name is "+student5.name+"  and my age is "+student5.age;
+        student6=new student(" lavanya",18)
+        document.getElementById("student6").innerHTML="my name is "+student6.name+"  and my age is "+student6.age;
+        student7=new student(" jashmitha",15)
+        document.getElementById("student7").innerHTML="my name is "+student7.name+"  and my age is "+student7.age;
+        student8=new student(" mahati",12)
+        document.getElementById("student8").innerHTML="my name is "+student8.name+"  and my age is "+student8.age;
+</script>
+</body>
+<hr>
+<body>
+    <h2>NAMES LISTED BELOW</h2>
+    <p id="details"></p>
+    <script>
+        class Plane{
+            constructor(brand){
+                this.planename=brand;
+            }
+            present(){
+                return 'I have a '+ this.planename;
+            }
+        }
+        class Model extends Plane{
+            constructor(brand,mod){
+                super(brand);
+                this.model= mod;
+             }
+             show(){
+                return this.present()+', it is a '+this.model;
+             }
+        }
+        let myPlane = new Model("Lockheed Martin","Lockheed SR-71 Blackbird");
+        document.getElementById("details").innerHTML=myPlane.show();
+    </script>
+</body>
+<hr>
+<body>
+    <p>static method</p>
+    <p id="hello"></p>
+    <p id="hi"></p>
+    <p id="welcome"></p>
+    <script>
+        class Student{
+            constructor(name){
+                this.studentname=name;
+            }
+            static hello(){
+                return "THANK YOU ";
+            }
+            static welcome(x){
+                return "REVIEW BY SCANNING " + x.studentname;
+            }
+            hi(){
+                return "VISIT AGAIN " + this.studentname;
+            }
+        }
+        
+        myname = new Student("mahati");
+        document.getElementById("hello").innerHTML = Student.hello();
+        document.getElementById("hi").innerHTML = myname.hi();
+        document.getElementById("welcome").innerHTML = Student.welcome(myname);
+    </script>
+</body>
