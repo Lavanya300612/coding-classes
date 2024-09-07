@@ -1,0 +1,35 @@
+<h2>js array SORT</h2>
+<button onclick="ascending()">/ascending</button>
+<button onclick="descending()">/descending</button>
+<p id="result"></p>
+<script>
+    var points=[10,78,85,57,87,78];
+    document.getElementById("result").innerHTML=points;
+    function ascending()
+    {
+        points.sort(function(a,b){return a-b});
+        document.getElementById("result").innerHTML=points;
+        }
+     function descending()
+    {
+        points.sort(function(a,b){return b-a});
+        document.getElementById("result").innerHTML=points;
+        }
+
+</script>
+<br>
+<body>
+    <h2>map fncn in js</h2>
+    <p id="lav"></p>
+    <script>
+        var number=[12,23,34,45,56];
+        function myfun(num)
+        {
+            return num / 10;}
+            var newarray=number.map(myfun);
+            document.getElementById("lav").innerHTML="THE FINAL OUTPUT IS:" +newarray;
+        
+        
+    </script>
+    </body>
+   <br>    

@@ -1,0 +1,14 @@
+<h2>eval method</h2>
+<p id="lav"></p>
+<button onclick="myfun()">evaluation</button>
+<script>
+    function myfun(){
+        var a = 10;
+        var b = 20;
+        var x = eval("a + b") + "<br>";
+        var y = eval("a - b") + "<br>";
+        var d = eval("2 * 2") + "<br>";
+        var res = x + y + d;
+        document.getElementById("lav").innerHTML=res;
+    }
+</script>
