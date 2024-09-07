@@ -1,4 +1,4 @@
-<h2>js array SORT</h2>
+<h2>welcome to ages</h2>
 <button onclick="ascending()">/ascending</button>
 <button onclick="descending()">/descending</button>
 <p id="result"></p>
@@ -18,18 +18,34 @@
 
 </script>
 <br>
+<hr>
 <body>
-    <h2>map fncn in js</h2>
+    <h2>float answers</h2>
     <p id="lav"></p>
     <script>
-        var number=[12,23,34,45,56];
+        var number=[45,67,45,755,6,5,55];
         function myfun(num)
         {
             return num / 10;}
             var newarray=number.map(myfun);
             document.getElementById("lav").innerHTML="THE FINAL OUTPUT IS:" +newarray;
-        
-        
+            
     </script>
     </body>
-   <br>    
+   <br>
+   <hr>    
+   <h2>fun with maths</h2>
+<p id="lav"></p>
+<button onclick="myfun()">evaluation</button>
+<script>
+    function myfun(){
+        var a = 10;
+        var b = 20;
+        var x = eval("a + b") + "<br>";
+        var y = eval("a - b") + "<br>";
+        var d = eval("2 * 2") + "<br>";
+        var res = x + y + d;
+        document.getElementById("lav").innerHTML=res;
+    }
+</script>
+<hr>
