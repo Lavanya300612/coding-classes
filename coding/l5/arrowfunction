@@ -1,0 +1,48 @@
+<head>
+    <style>
+*{background-color:blanchedalmond;
+  color: brown;
+}
+h2{
+    font-family: algerian;
+}
+    </style>
+</head>
+<hr>
+<body>
+    <h2>SEARCH AND REPLACE</h2>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        var c=74;
+        var g=86;
+        document.getElementById("para1").innerHTML=c*g;
+        document.getElementById("para2").innerHTML=String(c)/String(g);
+</script>
+</body>
+<hr>
+<body>
+    
+        <h2>JS ERRORHANDLING</h2>
+        <p id="ERRORHANDLING"></p>
+        <script>
+            try{
+                shhhh("welcome")
+            }
+            catch(err)
+            {
+                document.getElementById("ERRORHANDLING").innerHTML=err.message;
+            }
+        </script>
+    </body>
+<hr>
+<body>
+    <h2>ARROWMETHOD</h2>
+    <p id="arrowmethod"></p>
+    <script>
+        divide=(a,b)=>a/b;
+        document.getElementById("arrowmethod").innerHTML=divide(377,87);
+    </script>
+</body>
+<hr>
+
