@@ -1,0 +1,18 @@
+<h2>async and await</h2>
+<h1 id="lav">
+</h1>
+<script>
+    async function div (a,b)
+    {
+        let response=await a*b;
+        display (response);
+
+    }
+    function display(some)
+{
+    document.getElementById("lav").innerHTML=some;
+
+
+}
+div(30,20)
+</script>
