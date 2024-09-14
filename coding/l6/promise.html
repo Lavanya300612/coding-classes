@@ -1,0 +1,28 @@
+<h2>js promises</h2>
+<p id="para"></p>
+<script>
+    function mydisp(some){
+        document.getElementById("para").innerHTML=some;
+
+    }
+    function add(a,b){
+        var add=a+b;
+        mydisp(add);
+    }
+    let myPromise=new Promise(function(myResolve,myReject)
+    {
+        let x=0;
+        if (x==0)
+        {
+            myResolve("okay");
+        }
+        else{
+        myReject("error");
+        }});
+myPromise.then(
+    function (value)
+{add(12,13);},
+function(error)
+{add(error);});    
+    
+</script>
